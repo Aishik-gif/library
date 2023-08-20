@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <header>Library Project</header>
+    <div class="new-btn-container">
+      <button class="new-btn">+ New Book</button>
+    </div>
+    <dialog class="popUp" id="dialog">
+      <div><span class="close-popUp">&times;</span></div>
+      <form method="dialog" action="script.js">
+        <legend>New book</legend>
+        <label for="title">
+          Title:
+          <input type="text" id="title" name="book-title" maxlength="40" required/>
+        </label>
+        <label for="author">
+          Author:
+          <input type="text" id="author" name="book-author" maxlength="30" required/>
+        </label>
+        <label for="pages">
+          Pages:
+          <input type="number" id="pages" name="book-pages" max="999999999999999999" required/>
+        </label>
+        <label for="read">
+          Read?:
+          <input type="checkbox" id="read" name="book-read"  />
+        </label>
+        <label for="add">
+            <input type="submit" value="Add Book">
+        </label>
+      </form>
+    </dialog>
+    <div class="shelf">
+      <!-- <div class="book" id="1">
+        <div class="book-title">Harry Potter</div>
+        <div class="book-author">JK Rowling</div>
+        <div class="book-pages">420</div>
+        <div class="book-read"><button class="read">Read</button></div>
+        <div class="book-del"><button class="del"><i class="material-icons">delete</i></button></div>
+      </div> 
+      <div class="book" id="2">
+        <div class="book-title">Harry Potter 2</div>
+        <div class="book-author">JK Rowling</div>
+        <div class="book-pages">4201</div>
+        <div class="book-read"><button class="not-read">Not Read</button></div>
+      </div> -->
+    </div>
+    <footer>by Aishik</footer>
+  </body>
+</html>
